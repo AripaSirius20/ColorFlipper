@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş Color Flipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Renk Değiştiren Arka Plan</h1>
+        
+        <!-- Renk Formatı Seçici -->
+        <p>Renk Formatı Seçin:</p>
+        <select id="colorFormat">
+            <option value="HEX">HEX</option>
+            <option value="RGB">RGB</option>
+            <option value="HSL">HSL</option>
+        </select>
+
+        <!-- Renk Değiştirme Butonu -->
+        <button id="colorButton">Rengi Değiştir</button>
+        
+        <!-- Renk Kodu ve Kopyalama Mesajı -->
+        <p>Renk Kodu: <span id="colorCode">#FFFFFF</span></p>
+        <small id="copyMessage" style="display:none;">Kopyalandı!</small>
+        
+        <!-- Renk Geçmişi ve Favoriler -->
+        <div id="colorHistory">
+            <h3>Renk Geçmişi</h3>
+            <ul id="historyList"></ul>
+        </div>
+        
+        <div id="favorites">
+            <h3>Favori Renkler</h3>
+            <ul id="favoritesList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
